@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invest in Astria Learning | Strategic Partnership</title>
+  <meta name="description" content="Astria Learning builds, markets, and operates digital campuses for universities across emerging markets. Explore strategic partnership opportunities.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ================================================================
+       GLOBAL RESET
+       ================================================================ */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; -webkit-font-smoothing: antialiased; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; }
+
+    /* ================================================================
+       SECTION 1, HERO
+       ================================================================ */
+    .astria-inv2 {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      background: linear-gradient(165deg, #0C3352 0%, #0A4163 40%, #006C97 100%);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .astria-inv2-mesh {
+      position: absolute; inset: 0; overflow: hidden; pointer-events: none;
+    }
+    .astria-inv2-mesh svg { position: absolute; width: 100%; height: 100%; opacity: 0.07; }
+
+    .astria-inv2-particles { position: absolute; inset: 0; pointer-events: none; }
+    .astria-inv2-particle {
+      position: absolute; width: 3px; height: 3px; background: #51A6F1;
+      border-radius: 50%; opacity: 0; animation: astriaParticleDrift 8s ease-in-out infinite;
+    }
+    .astria-inv2-particle:nth-child(1) { top: 15%; left: 10%; animation-delay: 0s; }
+    .astria-inv2-particle:nth-child(2) { top: 25%; left: 85%; animation-delay: 1.5s; }
+    .astria-inv2-particle:nth-child(3) { top: 60%; left: 20%; animation-delay: 3s; }
+    .astria-inv2-particle:nth-child(4) { top: 70%; left: 75%; animation-delay: 4.5s; }
+    .astria-inv2-particle:nth-child(5) { top: 40%; left: 50%; animation-delay: 2s; }
+    .astria-inv2-particle:nth-child(6) { top: 80%; left: 40%; animation-delay: 5.5s; }
+    .astria-inv2-particle:nth-child(7) { top: 10%; left: 60%; animation-delay: 1s; }
+    .astria-inv2-particle:nth-child(8) { top: 50%; left: 90%; animation-delay: 3.5s; }
+
+    @keyframes astriaParticleDrift {
+      0% { opacity: 0; transform: translateY(0) scale(1); }
+      20% { opacity: 0.6; }
+      80% { opacity: 0.6; }
+      100% { opacity: 0; transform: translateY(-60px) scale(0.5); }
+    }
+
+    .astria-inv2::before {
+      content: ''; position: absolute; top: -15%; right: -5%;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(81,166,241,0.12) 0%, transparent 65%);
+      border-radius: 50%; pointer-events: none; animation: astriaGlow2 10s ease-in-out infinite;
+    }
+    .astria-inv2::after {
+      content: ''; position: absolute; bottom: -10%; left: -8%;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(0,108,151,0.15) 0%, transparent 65%);
+      border-radius: 50%; pointer-events: none; animation: astriaGlow2 13s ease-in-out infinite reverse;
+    }
+    @keyframes astriaGlow2 {
+      0%, 100% { transform: translate(0,0) scale(1); opacity: 1; }
+      50% { transform: translate(20px,-15px) scale(1.08); opacity: 0.7; }
+    }
+
+    .astria-inv2-inner {
+      position: relative; z-index: 2; max-width: 1440px; width: 100%;
+      padding: 100px 40px 80px 60px;
+      display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 60px; align-items: center;
+    }
+
+    .astria-inv2-copy { animation: astriaSlideUp2 0.9s ease-out both; }
+    @keyframes astriaSlideUp2 {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .astria-inv2-badge {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 8px 18px; border: 1px solid rgba(81,166,241,0.3);
+      border-radius: 100px; font-size: 13px; font-weight: 700;
+      letter-spacing: 2.5px; text-transform: uppercase; color: #51A6F1;
+      margin-bottom: 32px; background: rgba(81,166,241,0.06); backdrop-filter: blur(6px);
+    }
+    .astria-inv2-badge-dot {
+      width: 7px; height: 7px; background: #51A6F1; border-radius: 50%; position: relative;
+    }
+    .astria-inv2-badge-dot::after {
+      content: ''; position: absolute; inset: -3px;
+      border: 1px solid rgba(81,166,241,0.4); border-radius: 50%;
+      animation: astriaPing 2s ease-out infinite;
+    }
+    @keyframes astriaPing {
+      0% { transform: scale(1); opacity: 0.6; }
+      100% { transform: scale(2.2); opacity: 0; }
+    }
+
+    .astria-inv2-h1 {
+      font-weight: 700; font-size: clamp(38px, 4.2vw, 62px);
+      line-height: 1.1; color: #FFFFFF; letter-spacing: -0.5px; margin-bottom: 24px;
+    }
+    .astria-inv2-h1 .highlight { color: #51A6F1; position: relative; }
+    .astria-inv2-h1 .highlight::after {
+      content: ''; position: absolute; bottom: 2px; left: 0; width: 100%; height: 3px;
+      background: linear-gradient(90deg, #51A6F1, transparent); border-radius: 2px; opacity: 0.5;
+    }
+
+    .astria-inv2-sub {
+      font-size: 23px; line-height: 1.65; color: rgba(217,233,249,0.65);
+      max-width: 560px; margin-bottom: 40px; font-weight: 400;
+    }
+
+    .astria-inv2-ctas {
+      display: flex; gap: 14px; flex-wrap: wrap;
+      animation: astriaSlideUp2 0.9s ease-out 0.25s both;
+    }
+    .astria-inv2-cta-main {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 17px 34px; background: #51A6F1; color: #0C3352;
+      font-size: 16px; font-weight: 700; letter-spacing: 0.3px;
+      border-radius: 8px; border: none; cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+      position: relative; overflow: hidden;
+    }
+    .astria-inv2-cta-main::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent);
+      opacity: 0; transition: opacity 0.3s ease;
+    }
+    .astria-inv2-cta-main:hover {
+      transform: translateY(-2px); box-shadow: 0 12px 36px rgba(81,166,241,0.35);
+    }
+    .astria-inv2-cta-main:hover::before { opacity: 1; }
+    .astria-inv2-cta-main svg { width: 16px; height: 16px; transition: transform 0.3s ease; }
+    .astria-inv2-cta-main:hover svg { transform: translateX(3px); }
+
+    .astria-inv2-cta-ghost {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 17px 34px; background: transparent; color: #D9E9F9;
+      font-size: 16px; font-weight: 500; letter-spacing: 0.3px;
+      border-radius: 8px; border: 1px solid rgba(217,233,249,0.18);
+      cursor: pointer; transition: all 0.3s ease;
+    }
+    .astria-inv2-cta-ghost:hover {
+      border-color: rgba(81,166,241,0.5); color: #51A6F1; background: rgba(81,166,241,0.05);
+    }
+
+    /* Hero right: Infographic */
+    .astria-inv2-right {
+      animation: astriaSlideUp2 0.9s ease-out 0.4s both;
+      display: flex; justify-content: center; position: relative;
+    }
+    .astria-inv2-infographic {
+      position: relative; width: 100%; max-width: 520px; border-radius: 20px;
+      overflow: hidden; border: 1px solid rgba(81,166,241,0.15);
+      background: rgba(10,65,99,0.5); backdrop-filter: blur(20px);
+    }
+    .astria-inv2-bg-img {
+      position: absolute; bottom: -20px; right: -20px; width: 320px; opacity: 0.1;
+      pointer-events: none; filter: grayscale(100%) brightness(1.5);
+      mask-image: linear-gradient(to top left, rgba(0,0,0,0.6), transparent 70%);
+      -webkit-mask-image: linear-gradient(to top left, rgba(0,0,0,0.6), transparent 70%);
+    }
+    .astria-inv2-infographic::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, transparent, #51A6F1, transparent);
+    }
+    .astria-inv2-info-header { padding: 32px 32px 0; position: relative; z-index: 1; }
+    .astria-inv2-info-label {
+      font-size: 12px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+      color: rgba(81,166,241,0.6); margin-bottom: 16px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .astria-inv2-info-label::before { content: ''; width: 16px; height: 1px; background: #51A6F1; }
+    .astria-inv2-tam-row { display: flex; align-items: flex-end; gap: 20px; margin-bottom: 8px; justify-content: space-between; }
+    .astria-inv2-tam-left { display: flex; align-items: flex-end; gap: 20px; }
+    .astria-inv2-tam-val {
+      font-size: 72px; font-weight: 700; color: #FFFFFF; line-height: 1; letter-spacing: -2px;
+    }
+    .astria-inv2-tam-val .sym { color: #51A6F1; }
+    .astria-inv2-tam-tag {
+      font-size: 15px; font-weight: 500; color: rgba(217,233,249,0.5);
+      padding-bottom: 10px; line-height: 1.3;
+    }
+    .astria-inv2-cagr-inline {
+      display: flex; flex-direction: column; align-items: center;
+      padding: 12px 18px; background: rgba(81,166,241,0.1);
+      border: 1px solid rgba(81,166,241,0.2); border-radius: 12px;
+      margin-bottom: 6px; text-align: center; flex-shrink: 0;
+    }
+    .astria-inv2-cagr-inline-val { font-size: 26px; font-weight: 700; color: #51A6F1; line-height: 1; }
+    .astria-inv2-cagr-inline-label {
+      font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+      color: rgba(81,166,241,0.55); margin-top: 3px;
+    }
+
+    /* Chart */
+    .astria-inv2-chart-area { position: relative; height: 120px; margin: 20px 32px 0; z-index: 1; }
+    .astria-inv2-chart-area svg { width: 100%; height: 100%; }
+    .astria-inv2-chart-line {
+      fill: none; stroke: #51A6F1; stroke-width: 2.5; stroke-linecap: round;
+      stroke-dasharray: 600; stroke-dashoffset: 600;
+      animation: astriaDrawLine 2s ease-out 1s forwards;
+    }
+    .astria-inv2-chart-fill { opacity: 0; animation: astriaFadeIn 1s ease-out 2s forwards; }
+    @keyframes astriaDrawLine { to { stroke-dashoffset: 0; } }
+    @keyframes astriaFadeIn { to { opacity: 1; } }
+    .astria-inv2-chart-dot {
+      fill: #51A6F1; opacity: 0; animation: astriaPopIn 0.4s ease-out forwards;
+    }
+    .astria-inv2-chart-dot:nth-child(1) { animation-delay: 1.4s; }
+    .astria-inv2-chart-dot:nth-child(2) { animation-delay: 1.8s; }
+    .astria-inv2-chart-dot:nth-child(3) { animation-delay: 2.2s; }
+    .astria-inv2-chart-dot:nth-child(4) { animation-delay: 2.6s; }
+    .astria-inv2-chart-dot:nth-child(5) { animation-delay: 3s; }
+    @keyframes astriaPopIn {
+      from { opacity: 0; transform: scale(0); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .astria-inv2-chart-dot-glow {
+      fill: none; stroke: rgba(81,166,241,0.3); stroke-width: 1;
+      opacity: 0; animation: astriaPopIn 0.4s ease-out forwards;
+    }
+    .astria-inv2-chart-dot-glow:nth-child(1) { animation-delay: 1.4s; }
+    .astria-inv2-chart-dot-glow:nth-child(2) { animation-delay: 1.8s; }
+    .astria-inv2-chart-dot-glow:nth-child(3) { animation-delay: 2.2s; }
+    .astria-inv2-chart-dot-glow:nth-child(4) { animation-delay: 2.6s; }
+    .astria-inv2-chart-dot-glow:nth-child(5) { animation-delay: 3s; }
+
+    .astria-inv2-chart-years {
+      display: flex; justify-content: space-between; padding: 6px 32px 0;
+      position: relative; z-index: 1;
+    }
+    .astria-inv2-chart-year {
+      font-size: 12px; font-weight: 500; color: rgba(217,233,249,0.25); letter-spacing: 0.5px;
+    }
+    .astria-inv2-info-divider {
+      margin: 20px 32px 0; border: none; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(81,166,241,0.15), transparent);
+    }
+
+    /* Metrics grid */
+    .astria-inv2-info-metrics {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+      position: relative; z-index: 1;
+    }
+    .astria-inv2-info-metric { padding: 24px 32px; position: relative; }
+    .astria-inv2-info-metric:nth-child(1) {
+      border-right: 1px solid rgba(81,166,241,0.08);
+      border-bottom: 1px solid rgba(81,166,241,0.08);
+    }
+    .astria-inv2-info-metric:nth-child(2) { border-bottom: 1px solid rgba(81,166,241,0.08); }
+    .astria-inv2-info-metric-val {
+      font-size: 40px; font-weight: 700; color: #FFFFFF; line-height: 1; margin-bottom: 6px;
+    }
+    .astria-inv2-info-metric-val .acc { color: #51A6F1; }
+    .astria-inv2-info-metric-desc {
+      font-size: 14px; color: rgba(217,233,249,0.4); line-height: 1.4; font-weight: 400;
+    }
+
+    /* Scan line */
+    .astria-inv2-scanline {
+      position: absolute; top: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(81,166,241,0.4), transparent);
+      z-index: 5; animation: astriaScan 4s ease-in-out infinite; pointer-events: none;
+    }
+    @keyframes astriaScan {
+      0% { top: 0; opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { top: 100%; opacity: 0; }
+    }
+
+    /* Trust strip */
+    .astria-inv2-trust {
+      position: relative; z-index: 3; width: 100%; max-width: 1440px;
+      padding: 0 60px 60px; animation: astriaSlideUp2 0.9s ease-out 0.7s both;
+    }
+    .astria-inv2-trust-inner {
+      display: flex; align-items: center; gap: 40px; padding: 24px 0;
+      border-top: 1px solid rgba(81,166,241,0.08);
+    }
+    .astria-inv2-trust-label {
+      font-size: 13px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase;
+      color: rgba(217,233,249,0.2); white-space: nowrap;
+    }
+    .astria-inv2-trust-items { display: flex; align-items: center; gap: 32px; flex-wrap: wrap; }
+    .astria-inv2-trust-item {
+      display: flex; align-items: center; gap: 12px; font-size: 17px;
+      font-weight: 500; color: rgba(217,233,249,0.35);
+    }
+    .astria-inv2-trust-icon {
+      width: 40px; height: 40px; border-radius: 10px;
+      background: rgba(81,166,241,0.08); border: 1px solid rgba(81,166,241,0.12);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .astria-inv2-trust-icon svg { width: 20px; height: 20px; stroke: #51A6F1; opacity: 0.6; }
+
+    /* ================================================================
+       SECTION 2, THE OPPORTUNITY
+       ================================================================ */
+    .astria-opp {
+      position: relative; width: 100%; background: #F6F9FC; overflow: hidden;
+    }
+    .astria-opp::before {
+      content: ''; position: absolute; inset: 0;
+      background-image: repeating-linear-gradient(
+        120deg, transparent, transparent 80px,
+        rgba(10,65,99,0.015) 80px, rgba(10,65,99,0.015) 81px
+      );
+      pointer-events: none;
+    }
+    .astria-opp-inner {
+      position: relative; z-index: 1; max-width: 1440px; margin: 0 auto; padding: 100px 60px;
+    }
+
+    .section-label {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-size: 13px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+      color: #006C97; margin-bottom: 20px;
+    }
+    .section-label::before {
+      content: ''; width: 24px; height: 2px; background: #51A6F1; border-radius: 2px;
+    }
+    .section-label.light { color: #51A6F1; }
+
+    .section-h2 {
+      font-size: clamp(40px, 4.5vw, 62px); font-weight: 700; color: #0C3352;
+      line-height: 1.15; max-width: 800px; margin-bottom: 16px; letter-spacing: -0.3px;
+    }
+    .section-h2 .hl { color: #006C97; }
+    .section-h2.white { color: #FFFFFF; max-width: none; }
+    .section-h2.white .hl { color: #51A6F1; }
+
+    .section-intro {
+      font-size: 22px; line-height: 1.65; color: rgba(12,51,82,0.55);
+      max-width: 720px; margin-bottom: 64px;
+    }
+
+    /* TAM / SAM / SOM cards */
+    .astria-opp-tam-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 72px;
+    }
+    .tam-card {
+      position: relative; background: #FFFFFF; border-radius: 16px; padding: 36px 32px 32px;
+      border: 1px solid rgba(10,65,99,0.06);
+      transition: all 0.4s cubic-bezier(0.25,0.46,0.45,0.94); overflow: hidden;
+    }
+    .tam-card:hover {
+      transform: translateY(-4px); box-shadow: 0 20px 60px rgba(10,65,99,0.08);
+      border-color: rgba(81,166,241,0.2);
+    }
+    .tam-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    }
+    .tam-card.t1::before { background: linear-gradient(90deg, #006C97, #51A6F1); }
+    .tam-card.t2::before { background: linear-gradient(90deg, #0A4163, #006C97); }
+    .tam-card.t3::before { background: linear-gradient(90deg, #0C3352, #0A4163); }
+
+    .tam-ring { width: 56px; height: 56px; margin-bottom: 24px; }
+    .tam-ring svg { width: 100%; height: 100%; }
+    .tam-ring-track { fill: none; stroke: rgba(10,65,99,0.06); stroke-width: 4; }
+    .tam-ring-fill {
+      fill: none; stroke-width: 4; stroke-linecap: round;
+      transform: rotate(-90deg); transform-origin: 50% 50%; stroke-dasharray: 157;
+    }
+    .t1 .tam-ring-fill { stroke: #51A6F1; stroke-dashoffset: 15; }
+    .t2 .tam-ring-fill { stroke: #006C97; stroke-dashoffset: 60; }
+    .t3 .tam-ring-fill { stroke: #0A4163; stroke-dashoffset: 110; }
+
+    .tam-type {
+      font-size: 13px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase;
+      color: rgba(12,51,82,0.35); margin-bottom: 10px;
+    }
+    .tam-val {
+      font-size: 56px; font-weight: 700; color: #0C3352; line-height: 1;
+      margin-bottom: 8px; letter-spacing: -1px;
+    }
+    .tam-val .sym { color: #51A6F1; }
+    .t2 .tam-val .sym { color: #006C97; }
+    .t3 .tam-val .sym { color: #0A4163; }
+    .tam-desc { font-size: 18px; line-height: 1.6; color: rgba(12,51,82,0.5); }
+
+    /* Improved TAM card elements */
+    .tam-card-top {
+      display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px;
+    }
+    .tam-card-growth {
+      display: flex; flex-direction: column; align-items: center;
+      padding: 10px 16px; background: rgba(10,65,99,0.04); border-radius: 10px;
+      border: 1px solid rgba(10,65,99,0.06);
+    }
+    .tam-card-growth-val {
+      font-size: 20px; font-weight: 700; color: #0C3352; line-height: 1;
+    }
+    .t2 .tam-card-growth-val { color: #006C97; }
+    .t3 .tam-card-growth-val { color: #0A4163; }
+    .tam-card-growth-label {
+      font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;
+      color: rgba(12,51,82,0.35); margin-top: 2px;
+    }
+    .tam-card-bar {
+      margin-top: 20px; height: 6px; background: rgba(10,65,99,0.04);
+      border-radius: 100px; overflow: hidden;
+    }
+    .tam-card-bar-fill {
+      height: 100%; border-radius: 100px;
+      animation: tamBarGrow 1.5s ease-out forwards;
+    }
+    .t1-fill { width: 100%; background: linear-gradient(90deg, #51A6F1, #006C97); }
+    .t2-fill { width: 55%; background: linear-gradient(90deg, #006C97, #0A4163); }
+    .t3-fill { width: 25%; background: linear-gradient(90deg, #0A4163, #0C3352); }
+    @keyframes tamBarGrow {
+      from { width: 0; }
+    }
+
+    /* Why now pillars */
+    .why-h3 {
+      font-size: clamp(34px, 3.5vw, 48px); font-weight: 700; color: #0C3352;
+      margin-bottom: 48px; max-width: 600px; line-height: 1.2;
+    }
+    .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+    .pillar {
+      padding: 32px 28px; background: #FFFFFF; border-radius: 14px;
+      border: 1px solid rgba(10,65,99,0.06); transition: all 0.35s ease;
+    }
+    .pillar:hover {
+      border-color: rgba(81,166,241,0.2); box-shadow: 0 12px 40px rgba(10,65,99,0.06);
+    }
+    .pillar-icon {
+      width: 48px; height: 48px; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center; margin-bottom: 20px;
+    }
+    .pillar:nth-child(1) .pillar-icon { background: rgba(81,166,241,0.1); }
+    .pillar:nth-child(2) .pillar-icon { background: rgba(0,108,151,0.1); }
+    .pillar:nth-child(3) .pillar-icon { background: rgba(10,65,99,0.1); }
+    .pillar-icon svg {
+      width: 24px; height: 24px; stroke-width: 2; stroke-linecap: round;
+      stroke-linejoin: round; fill: none;
+    }
+    .pillar:nth-child(1) .pillar-icon svg { stroke: #51A6F1; }
+    .pillar:nth-child(2) .pillar-icon svg { stroke: #006C97; }
+    .pillar:nth-child(3) .pillar-icon svg { stroke: #0A4163; }
+    .pillar-num { font-size: 38px; font-weight: 700; color: #0C3352; margin-bottom: 4px; line-height: 1; }
+    .pillar-num .acc { color: #51A6F1; }
+    .pillar:nth-child(2) .pillar-num .acc { color: #006C97; }
+    .pillar:nth-child(3) .pillar-num .acc { color: #0A4163; }
+    .pillar-title { font-size: 19px; font-weight: 600; color: #0C3352; margin-bottom: 10px; }
+    .pillar-text { font-size: 18px; line-height: 1.65; color: rgba(12,51,82,0.5); }
+
+    /* ================================================================
+       SECTION 3, WHY ASTRIA / MOAT
+       ================================================================ */
+    .astria-moat {
+      position: relative; width: 100%;
+      background: linear-gradient(175deg, #0C3352 0%, #0A4163 50%, #006C97 100%);
+      overflow: hidden;
+    }
+    .astria-moat-mesh {
+      position: absolute; inset: 0; pointer-events: none; opacity: 0.04;
+      background-image:
+        radial-gradient(circle at 20% 30%, rgba(81,166,241,0.5) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(81,166,241,0.3) 0%, transparent 50%);
+    }
+    .astria-moat-inner {
+      position: relative; z-index: 1; max-width: 1440px; margin: 0 auto; padding: 100px 60px;
+    }
+
+    .moat-top {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+      align-items: start; margin-bottom: 72px;
+    }
+    .moat-desc {
+      font-size: 22px; line-height: 1.7; color: rgba(217,233,249,0.5); padding-top: 52px;
+    }
+
+    /* Moat cards */
+    .moat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-bottom: 72px; }
+    .moat-card {
+      position: relative; background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(81,166,241,0.1); border-radius: 16px;
+      padding: 40px 36px; backdrop-filter: blur(10px);
+      transition: all 0.4s ease; overflow: hidden;
+    }
+    .moat-card::before {
+      content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 100%;
+      background: linear-gradient(180deg, #51A6F1, transparent); opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+    .moat-card:hover {
+      background: rgba(255,255,255,0.05); border-color: rgba(81,166,241,0.2);
+      transform: translateY(-3px); box-shadow: 0 16px 48px rgba(0,0,0,0.15);
+    }
+    .moat-card:hover::before { opacity: 1; }
+    .moat-card-head { display: flex; align-items: center; gap: 16px; margin-bottom: 18px; }
+    .moat-card-icon {
+      width: 52px; height: 52px; border-radius: 12px;
+      background: rgba(81,166,241,0.08); border: 1px solid rgba(81,166,241,0.12);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .moat-card-icon svg {
+      width: 24px; height: 24px; stroke: #51A6F1; fill: none;
+      stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+    }
+    .moat-card-title { font-size: 22px; font-weight: 700; color: #FFFFFF; }
+    .moat-card-text { font-size: 18px; line-height: 1.7; color: rgba(217,233,249,0.45); }
+    .moat-card-stat {
+      display: inline-flex; align-items: baseline; gap: 6px; margin-top: 16px;
+      padding: 8px 14px; background: rgba(81,166,241,0.06); border-radius: 8px;
+      border: 1px solid rgba(81,166,241,0.1);
+    }
+    .moat-card-stat-val { font-size: 24px; font-weight: 700; color: #51A6F1; }
+    .moat-card-stat-label { font-size: 15px; color: rgba(217,233,249,0.4); font-weight: 500; }
+
+    /* Comparison table */
+    .moat-compare {
+      border: 1px solid rgba(81,166,241,0.1); border-radius: 16px;
+      background: rgba(255,255,255,0.02); overflow: hidden;
+    }
+    .moat-compare-head {
+      padding: 28px 36px; border-bottom: 1px solid rgba(81,166,241,0.08);
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .moat-compare-title { font-size: 20px; font-weight: 700; color: #FFFFFF; }
+    .moat-compare-tag {
+      font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+      color: #51A6F1; padding: 6px 14px; background: rgba(81,166,241,0.1); border-radius: 100px;
+    }
+    .moat-compare-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; font-size: 16px; }
+    .moat-compare-row { display: contents; }
+    .moat-compare-row > div {
+      padding: 18px 36px; border-bottom: 1px solid rgba(81,166,241,0.04);
+      display: flex; align-items: center;
+    }
+    .moat-compare-row:last-child > div { border-bottom: none; }
+    .moat-compare-feature { color: rgba(217,233,249,0.6); font-weight: 500; }
+    .moat-compare-check { justify-content: center; color: #51A6F1; }
+    .moat-compare-x { justify-content: center; color: rgba(217,233,249,0.15); }
+    .moat-compare-check-dim { justify-content: center; color: rgba(217,233,249,0.25); }
+    .moat-col-header {
+      padding: 14px 36px; font-size: 12px; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; border-bottom: 1px solid rgba(81,166,241,0.08);
+    }
+    .moat-col-header.feature-col { color: rgba(217,233,249,0.25); }
+    .moat-col-header.astria-col { color: #51A6F1; text-align: center; background: rgba(81,166,241,0.04); }
+    .moat-col-header.other-col { color: rgba(217,233,249,0.2); text-align: center; }
+    .check-icon, .x-icon { width: 22px; height: 22px; }
+
+    /* ================================================================
+       SECTION 4, THE MODEL
+       ================================================================ */
+    .astria-model { position: relative; width: 100%; background: #F6F9FC; overflow: hidden; }
+    .astria-model-inner {
+      position: relative; z-index: 1; max-width: 1440px; margin: 0 auto; padding: 100px 60px;
+    }
+    .model-top {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+      align-items: start; margin-bottom: 72px;
+    }
+    .model-desc {
+      font-size: 22px; line-height: 1.7; color: rgba(12,51,82,0.5); padding-top: 52px;
+    }
+
+    /* Steps */
+    .model-steps {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative;
+    }
+    .model-steps::before {
+      content: ''; position: absolute; top: 48px; left: 60px; right: 60px; height: 2px;
+      background: linear-gradient(90deg, #51A6F1, #006C97, #0A4163, #0C3352);
+      opacity: 0.2; z-index: 0;
+    }
+    .model-step { position: relative; z-index: 1; text-align: center; padding: 0 16px; }
+    .model-step-num {
+      width: 96px; height: 96px; margin: 0 auto 28px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 40px; font-weight: 700; color: #FFFFFF;
+      position: relative; transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .model-step:hover .model-step-num { transform: scale(1.08); }
+    .model-step:nth-child(1) .model-step-num { background: linear-gradient(135deg, #51A6F1, #006C97); box-shadow: 0 8px 32px rgba(81,166,241,0.25); }
+    .model-step:nth-child(2) .model-step-num { background: linear-gradient(135deg, #006C97, #0A4163); box-shadow: 0 8px 32px rgba(0,108,151,0.25); }
+    .model-step:nth-child(3) .model-step-num { background: linear-gradient(135deg, #0A4163, #0C3352); box-shadow: 0 8px 32px rgba(10,65,99,0.25); }
+    .model-step:nth-child(4) .model-step-num { background: linear-gradient(135deg, #0C3352, #0A4163); box-shadow: 0 8px 32px rgba(12,51,82,0.25); }
+    .model-step:hover:nth-child(1) .model-step-num { box-shadow: 0 12px 48px rgba(81,166,241,0.35); }
+    .model-step:hover:nth-child(2) .model-step-num { box-shadow: 0 12px 48px rgba(0,108,151,0.35); }
+    .model-step:hover:nth-child(3) .model-step-num { box-shadow: 0 12px 48px rgba(10,65,99,0.35); }
+    .model-step:hover:nth-child(4) .model-step-num { box-shadow: 0 12px 48px rgba(12,51,82,0.35); }
+    .model-step-num::after {
+      content: ''; position: absolute; inset: -6px; border-radius: 50%;
+      border: 2px solid rgba(81,166,241,0.3); opacity: 0; transition: all 0.4s ease;
+    }
+    .model-step:hover .model-step-num::after { opacity: 1; inset: -10px; }
+    .model-step-title { font-size: 20px; font-weight: 700; color: #0C3352; margin-bottom: 10px; }
+    .model-step-text {
+      font-size: 17px; line-height: 1.6; color: rgba(12,51,82,0.45); max-width: 280px; margin: 0 auto;
+    }
+
+    /* Revenue model callout */
+    .model-revenue {
+      margin-top: 72px; background: #FFFFFF; border: 1px solid rgba(10,65,99,0.06);
+      border-radius: 16px; padding: 48px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;
+    }
+    .model-rev-left h3 { font-size: 36px; font-weight: 700; color: #0C3352; margin-bottom: 16px; line-height: 1.2; }
+    .model-rev-left h3 .hl { color: #006C97; }
+    .model-rev-left p { font-size: 20px; line-height: 1.7; color: rgba(12,51,82,0.5); }
+    .model-rev-flow { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; }
+    .model-rev-node {
+      padding: 16px 24px; border-radius: 12px; text-align: center;
+      font-size: 15px; font-weight: 600; min-width: 140px;
+    }
+    .model-rev-node.university { background: rgba(10,65,99,0.06); color: #0A4163; border: 1px solid rgba(10,65,99,0.1); }
+    .model-rev-node.astria-node { background: linear-gradient(135deg, #006C97, #0A4163); color: #FFFFFF; box-shadow: 0 6px 24px rgba(0,108,151,0.2); }
+    .model-rev-node.revenue { background: rgba(81,166,241,0.08); color: #006C97; border: 1px solid rgba(81,166,241,0.2); }
+    .model-rev-arrow { color: rgba(10,65,99,0.2); font-size: 24px; }
+    .model-rev-node-sub { display: block; font-size: 12px; font-weight: 500; opacity: 0.65; margin-top: 4px; letter-spacing: 0.5px; }
+
+    /* ================================================================
+       SECTION 6, FINAL CTA
+       ================================================================ */
+    .astria-cta-final { position: relative; width: 100%; background: #F6F9FC; overflow: hidden; }
+    .astria-cta-final-inner {
+      position: relative; z-index: 1; max-width: 1440px; margin: 0 auto; padding: 100px 60px;
+    }
+    .cta-card {
+      position: relative;
+      background: linear-gradient(155deg, #0C3352 0%, #0A4163 40%, #006C97 100%);
+      border-radius: 24px; padding: 80px 60px; text-align: center; overflow: hidden;
+    }
+    .cta-card::before {
+      content: ''; position: absolute; top: -50%; left: -20%;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(81,166,241,0.1) 0%, transparent 60%);
+      border-radius: 50%; pointer-events: none;
+    }
+    .cta-card::after {
+      content: ''; position: absolute; bottom: -40%; right: -10%;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(81,166,241,0.08) 0%, transparent 60%);
+      border-radius: 50%; pointer-events: none;
+    }
+    .cta-grid {
+      position: absolute; inset: 0; opacity: 0.03; pointer-events: none;
+      background-image:
+        linear-gradient(rgba(81,166,241,0.5) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(81,166,241,0.5) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .cta-content { position: relative; z-index: 1; }
+    .cta-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 18px; border: 1px solid rgba(81,166,241,0.3);
+      border-radius: 100px; font-size: 13px; font-weight: 700;
+      letter-spacing: 2.5px; text-transform: uppercase; color: #51A6F1;
+      background: rgba(81,166,241,0.06); margin-bottom: 32px;
+    }
+    .cta-h2 {
+      font-size: clamp(40px, 5vw, 66px); font-weight: 700; color: #FFFFFF;
+      line-height: 1.12; margin-bottom: 20px; letter-spacing: -0.5px;
+    }
+    .cta-h2 .hl { color: #51A6F1; }
+    .cta-sub {
+      font-size: 23px; line-height: 1.65; color: rgba(217,233,249,0.5);
+      max-width: 700px; margin: 0 auto 44px;
+    }
+    .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 48px; }
+    .cta-btn-primary {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 18px 36px; background: #51A6F1; color: #0C3352;
+      font-family: 'DM Sans', sans-serif; font-size: 17px; font-weight: 700;
+      letter-spacing: 0.3px; border-radius: 10px; border: none; cursor: pointer;
+      transition: all 0.35s cubic-bezier(0.25,0.46,0.45,0.94);
+      position: relative; overflow: hidden;
+    }
+    .cta-btn-primary::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent);
+      opacity: 0; transition: opacity 0.3s ease;
+    }
+    .cta-btn-primary:hover { transform: translateY(-3px); box-shadow: 0 16px 48px rgba(81,166,241,0.35); }
+    .cta-btn-primary:hover::before { opacity: 1; }
+    .cta-btn-primary svg { width: 18px; height: 18px; transition: transform 0.3s ease; }
+    .cta-btn-primary:hover svg { transform: translateX(3px); }
+    .cta-btn-secondary {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 18px 36px; background: transparent; color: #D9E9F9;
+      font-family: 'DM Sans', sans-serif; font-size: 17px; font-weight: 500;
+      letter-spacing: 0.3px; border-radius: 10px;
+      border: 1px solid rgba(217,233,249,0.15); cursor: pointer; transition: all 0.35s ease;
+    }
+    .cta-btn-secondary:hover { border-color: rgba(81,166,241,0.4); color: #51A6F1; background: rgba(81,166,241,0.05); }
+
+    .cta-contact {
+      display: flex; align-items: center; justify-content: center; gap: 36px; flex-wrap: wrap;
+      padding-top: 32px; border-top: 1px solid rgba(81,166,241,0.1);
+    }
+    .cta-contact-item {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 16px; color: rgba(217,233,249,0.4); transition: color 0.3s ease;
+    }
+    a.cta-contact-item:hover { color: #51A6F1; }
+    .cta-contact-icon {
+      width: 40px; height: 40px; border-radius: 10px;
+      background: rgba(81,166,241,0.08); border: 1px solid rgba(81,166,241,0.1);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .cta-contact-icon svg { width: 18px; height: 18px; stroke: #51A6F1; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .cta-bottom { margin-top: 48px; text-align: center; font-size: 14px; color: rgba(12,51,82,0.3); }
+
+    /* ================================================================
+       OUR SOLUTION SECTION
+       ================================================================ */
+    .astria-solution {
+      position: relative; width: 100%;
+      background: linear-gradient(175deg, #0C3352 0%, #0A4163 50%, #006C97 100%);
+      overflow: hidden;
+    }
+    .astria-solution-inner {
+      position: relative; z-index: 1; max-width: 1440px;
+      margin: 0 auto; padding: 100px 60px; text-align: center;
+    }
+    .solution-heading { margin-bottom: 64px; }
+    .solution-watermark {
+      font-size: clamp(48px, 8vw, 110px); font-weight: 700;
+      color: rgba(81,166,241,0.06); line-height: 1; margin-bottom: -20px;
+      letter-spacing: -3px; pointer-events: none; user-select: none;
+    }
+    .solution-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+      position: relative;
+    }
+    .solution-grid::before {
+      content: ''; position: absolute;
+      top: 50%; left: 50%; width: 2px; height: 60%;
+      background: linear-gradient(180deg, rgba(81,166,241,0.15), transparent);
+      transform: translate(-50%, -50%); pointer-events: none;
+    }
+    .solution-card {
+      padding: 36px 28px; border-radius: 16px; text-align: center;
+      border: 1px solid rgba(81,166,241,0.1); background: rgba(255,255,255,0.03);
+      backdrop-filter: blur(8px); transition: all 0.4s ease; position: relative;
+    }
+    .solution-card:hover {
+      background: rgba(255,255,255,0.06); border-color: rgba(81,166,241,0.25);
+      transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,0.15);
+    }
+    .solution-card-icon {
+      width: 56px; height: 56px; border-radius: 14px; margin: 0 auto 20px;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(81,166,241,0.08); border: 1px solid rgba(81,166,241,0.12);
+    }
+    .solution-card-icon svg {
+      width: 26px; height: 26px; stroke: #51A6F1; fill: none;
+      stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+    }
+    .solution-card-title {
+      font-size: 19px; font-weight: 700; color: #FFFFFF; margin-bottom: 6px;
+    }
+    .solution-card-sub {
+      font-size: 15px; color: rgba(217,233,249,0.4); font-weight: 400;
+    }
+    .solution-connector {
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px 0; position: relative;
+    }
+    .solution-connector-dot {
+      width: 10px; height: 10px; background: #51A6F1; border-radius: 50%;
+      position: relative; z-index: 2;
+      box-shadow: 0 0 16px rgba(81,166,241,0.4);
+    }
+    .solution-connector-line {
+      position: absolute; width: 60%; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(81,166,241,0.15), transparent);
+    }
+
+    /* ================================================================
+       PARTNER SECTION
+       ================================================================ */
+    .astria-partner {
+      position: relative; width: 100%;
+      background: linear-gradient(175deg, #0C3352 0%, #0A4163 50%, #006C97 100%);
+      overflow: hidden;
+    }
+    .astria-partner::before {
+      content: ''; position: absolute; inset: 0; pointer-events: none; opacity: 0.04;
+      background-image:
+        radial-gradient(circle at 30% 40%, rgba(81,166,241,0.5) 0%, transparent 50%),
+        radial-gradient(circle at 70% 60%, rgba(81,166,241,0.3) 0%, transparent 50%);
+    }
+    .astria-partner-inner {
+      position: relative; z-index: 1; max-width: 1440px;
+      margin: 0 auto; padding: 100px 60px; text-align: center;
+    }
+    .partner-h2 {
+      font-size: clamp(36px, 4vw, 56px); font-weight: 700; color: #FFFFFF;
+      line-height: 1.15; margin-bottom: 20px; letter-spacing: -0.3px;
+    }
+    .partner-h2 .hl { color: #51A6F1; }
+    .partner-sub {
+      font-size: 20px; line-height: 1.7; color: rgba(217,233,249,0.5);
+      max-width: 800px; margin: 0 auto 28px;
+    }
+    .partner-tag {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 20px; border: 1px solid rgba(81,166,241,0.25);
+      border-radius: 100px; font-size: 13px; font-weight: 700;
+      letter-spacing: 1.5px; color: #51A6F1; background: rgba(81,166,241,0.06);
+      margin-bottom: 56px;
+    }
+    .partner-tag::before {
+      content: '✦'; color: #51A6F1; font-size: 11px;
+    }
+    .partner-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+      max-width: 960px; margin: 0 auto; text-align: left;
+    }
+    .partner-card {
+      padding: 36px 32px; border-radius: 16px;
+      border: 1px solid rgba(81,166,241,0.1);
+      background: rgba(255,255,255,0.03); backdrop-filter: blur(8px);
+      display: flex; align-items: flex-start; gap: 20px;
+      transition: all 0.4s ease; position: relative; overflow: hidden;
+    }
+    .partner-card::before {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, #51A6F1, transparent); opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+    .partner-card:hover {
+      background: rgba(255,255,255,0.06); border-color: rgba(81,166,241,0.25);
+      transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,0.15);
+    }
+    .partner-card:hover::before { opacity: 1; }
+    .partner-card-icon {
+      width: 56px; height: 56px; border-radius: 14px; flex-shrink: 0;
+      background: rgba(81,166,241,0.08); border: 1px solid rgba(81,166,241,0.15);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .partner-card-icon svg {
+      width: 26px; height: 26px; stroke: #51A6F1; fill: none;
+      stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+    }
+    .partner-card-num {
+      font-size: 11px; font-weight: 700; letter-spacing: 2px; color: rgba(81,166,241,0.4);
+      margin-bottom: 8px;
+    }
+    .partner-card-title {
+      font-size: 20px; font-weight: 700; color: #FFFFFF; margin-bottom: 6px; line-height: 1.25;
+    }
+    .partner-card-desc {
+      font-size: 16px; line-height: 1.6; color: rgba(217,233,249,0.4);
+    }
+
+    /* ================================================================
+       RESPONSIVE
+       ================================================================ */
+    @media (max-width: 960px) {
+      .astria-inv2-inner { grid-template-columns: 1fr; gap: 48px; padding: 80px 28px 60px; text-align: center; }
+      .astria-inv2-sub { margin-left: auto; margin-right: auto; }
+      .astria-inv2-ctas { justify-content: center; }
+      .astria-inv2-infographic { max-width: 100%; }
+      .astria-inv2-trust { padding: 0 24px 40px; }
+      .astria-inv2-trust-inner { flex-direction: column; gap: 20px; align-items: flex-start; }
+    }
+
+    @media (max-width: 900px) {
+      .astria-opp-tam-grid, .moat-grid, .solution-grid { grid-template-columns: 1fr; }
+      .moat-top { grid-template-columns: 1fr; gap: 20px; }
+      .moat-desc { padding-top: 0; }
+      .cta-card { padding: 60px 32px; }
+      .astria-opp-inner, .astria-moat-inner, .astria-cta-final-inner,
+      .astria-solution-inner, .astria-partner-inner { padding: 72px 28px; }
+      .partner-grid { grid-template-columns: 1fr; }
+      .partner-row { padding: 24px 24px; }
+    }
+
+    @media (max-width: 520px) {
+      .astria-inv2-ctas, .cta-buttons { flex-direction: column; }
+      .astria-inv2-cta-main, .astria-inv2-cta-ghost,
+      .cta-btn-primary, .cta-btn-secondary { width: 100%; justify-content: center; }
+      .astria-inv2-tam-val { font-size: 48px; }
+      .astria-inv2-info-metric-val { font-size: 22px; }
+      .astria-inv2-cagr-inline-val { font-size: 20px; }
+      .astria-inv2-bg-img { width: 200px; }
+      .tam-val { font-size: 36px; }
+      .cta-card { padding: 48px 20px; }
+      .cta-contact { flex-direction: column; align-items: center; gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ================================================================
+     SECTION 1, HERO
+     ================================================================ -->
+<section class="astria-inv2">
+  <div class="astria-inv2-mesh">
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="astria-grid2" width="60" height="60" patternUnits="userSpaceOnUse">
+          <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(81,166,241,0.3)" stroke-width="0.5"/>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#astria-grid2)"/>
+    </svg>
+  </div>
+  <div class="astria-inv2-particles">
+    <div class="astria-inv2-particle"></div><div class="astria-inv2-particle"></div>
+    <div class="astria-inv2-particle"></div><div class="astria-inv2-particle"></div>
+    <div class="astria-inv2-particle"></div><div class="astria-inv2-particle"></div>
+    <div class="astria-inv2-particle"></div><div class="astria-inv2-particle"></div>
+  </div>
+
+  <div class="astria-inv2-inner">
+    <div class="astria-inv2-copy">
+      <div class="astria-inv2-badge">
+        <span class="astria-inv2-badge-dot"></span>
+        The Infrastructure of Intelligence
+      </div>
+      <h1 class="astria-inv2-h1">
+        Investing in the <span class="highlight">Global</span> Education Revolution
+      </h1>
+      <p class="astria-inv2-sub">
+        Astria Learning provides the digital infrastructure universities need to scale, improve efficiency, and expand access globally. We invite investors to partner with us to drive long-term growth and institutional transformation.
+      </p>
+      <div class="astria-inv2-ctas">
+        <a href="https://calendly.com/astrialearning/explore-investing-opportunities" class="astria-inv2-cta-main">
+          Explore Partnership
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="https://astrialearning.com/contact-us/" class="astria-inv2-cta-ghost">Investor Relations</a>
+      </div>
+    </div>
+
+    <div class="astria-inv2-right">
+      <div class="astria-inv2-infographic">
+        <div class="astria-inv2-scanline"></div>
+        <!-- ⚠️ REPLACE src with your WordPress media URL for handshake image -->
+        <img class="astria-inv2-bg-img" src="https://astrialearning.com/wp-content/uploads/2026/03/handshake-bg.jpg" alt="" aria-hidden="true" loading="lazy"/>
+        <div class="astria-inv2-info-header">
+          <div class="astria-inv2-info-label">Global EdTech Market by 2030</div>
+          <div class="astria-inv2-tam-row">
+            <div class="astria-inv2-tam-left">
+              <div class="astria-inv2-tam-val"><span class="sym">$</span>349<span class="sym">B</span></div>
+              <div class="astria-inv2-tam-tag">Total Addressable<br>Market</div>
+            </div>
+            <div class="astria-inv2-cagr-inline">
+              <div class="astria-inv2-cagr-inline-val">13.3%</div>
+              <div class="astria-inv2-cagr-inline-label">CAGR Growth</div>
+            </div>
+          </div>
+        </div>
+        <div class="astria-inv2-chart-area">
+          <svg viewBox="0 0 456 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="30" x2="456" y2="30" stroke="rgba(81,166,241,0.06)" stroke-width="1"/>
+            <line x1="0" y1="60" x2="456" y2="60" stroke="rgba(81,166,241,0.06)" stroke-width="1"/>
+            <line x1="0" y1="90" x2="456" y2="90" stroke="rgba(81,166,241,0.06)" stroke-width="1"/>
+            <defs>
+              <linearGradient id="chartGrad2" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#51A6F1" stop-opacity="0.2"/>
+                <stop offset="100%" stop-color="#51A6F1" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <path class="astria-inv2-chart-fill" d="M 0 100 Q 60 95, 114 85 T 228 55 T 342 30 T 456 8 L 456 120 L 0 120 Z" fill="url(#chartGrad2)"/>
+            <path class="astria-inv2-chart-line" d="M 0 100 Q 60 95, 114 85 T 228 55 T 342 30 T 456 8"/>
+            <circle class="astria-inv2-chart-dot-glow" cx="0" cy="100" r="10"/>
+            <circle class="astria-inv2-chart-dot-glow" cx="114" cy="85" r="10"/>
+            <circle class="astria-inv2-chart-dot-glow" cx="228" cy="55" r="10"/>
+            <circle class="astria-inv2-chart-dot-glow" cx="342" cy="30" r="10"/>
+            <circle class="astria-inv2-chart-dot-glow" cx="456" cy="8" r="10"/>
+            <circle class="astria-inv2-chart-dot" cx="0" cy="100" r="4"/>
+            <circle class="astria-inv2-chart-dot" cx="114" cy="85" r="4"/>
+            <circle class="astria-inv2-chart-dot" cx="228" cy="55" r="4"/>
+            <circle class="astria-inv2-chart-dot" cx="342" cy="30" r="4"/>
+            <circle class="astria-inv2-chart-dot" cx="456" cy="8" r="4"/>
+          </svg>
+        </div>
+        <div class="astria-inv2-chart-years">
+          <span class="astria-inv2-chart-year">2022</span>
+          <span class="astria-inv2-chart-year">2024</span>
+          <span class="astria-inv2-chart-year">2026</span>
+          <span class="astria-inv2-chart-year">2028</span>
+          <span class="astria-inv2-chart-year">2030</span>
+        </div>
+        <hr class="astria-inv2-info-divider"/>
+        <div class="astria-inv2-info-metrics">
+          <div class="astria-inv2-info-metric">
+            <div class="astria-inv2-info-metric-val">12<span class="acc">,</span>000<span class="acc">+</span></div>
+            <div class="astria-inv2-info-metric-desc">Students enrolled</div>
+          </div>
+          <div class="astria-inv2-info-metric">
+            <div class="astria-inv2-info-metric-val">20<span class="acc">+</span></div>
+            <div class="astria-inv2-info-metric-desc">Global student base</div>
+          </div>
+          <div class="astria-inv2-info-metric">
+            <div class="astria-inv2-info-metric-val">3<span class="acc">×</span></div>
+            <div class="astria-inv2-info-metric-desc">Avg. enrollment growth</div>
+          </div>
+          <div class="astria-inv2-info-metric">
+            <div class="astria-inv2-info-metric-val">90 <span class="acc">days</span></div>
+            <div class="astria-inv2-info-metric-desc">Concept to launch</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="astria-inv2-trust">
+    <div class="astria-inv2-trust-inner">
+      <span class="astria-inv2-trust-label">Infrastructure</span>
+      <div class="astria-inv2-trust-items">
+        <div class="astria-inv2-trust-item">
+          <div class="astria-inv2-trust-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          LMS · SIS · CRM
+        </div>
+        <div class="astria-inv2-trust-item">
+          <div class="astria-inv2-trust-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          Enrollment Marketing
+        </div>
+        <div class="astria-inv2-trust-item">
+          <div class="astria-inv2-trust-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+          Academic Delivery
+        </div>
+        <div class="astria-inv2-trust-item">
+          <div class="astria-inv2-trust-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          Emerging Markets
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     SECTION 2, THE OPPORTUNITY
+     ================================================================ -->
+<section class="astria-opp">
+  <div class="astria-opp-inner">
+    <div class="section-label">The Opportunity</div>
+    <h2 class="section-h2" style="max-width: none;">A Sunrise Moment in <span class="hl">Higher Education</span></h2>
+    <p class="section-intro" style="max-width: none;">Higher education is entering a new era of digital expansion. Demand for flexible, accessible, high-quality education is growing rapidly across emerging and digital-first markets. This shift is structural, not cyclical, and Astria is positioned at the center of it.</p>
+
+    <div class="astria-opp-tam-grid">
+      <div class="tam-card t1">
+        <div class="tam-card-top">
+          <div class="tam-ring"><svg viewBox="0 0 56 56"><circle class="tam-ring-track" cx="28" cy="28" r="25"/><circle class="tam-ring-fill" cx="28" cy="28" r="25"/></svg></div>
+          <div class="tam-card-growth">
+            <span class="tam-card-growth-val">13.3%</span>
+            <span class="tam-card-growth-label">CAGR</span>
+          </div>
+        </div>
+        <div class="tam-type">Total Addressable Market</div>
+        <div class="tam-val"><span class="sym">$</span>349<span class="sym">B</span></div>
+        <div class="tam-desc">The global EdTech market projected to reach $349B by 2030, driven by accelerating digital transformation across higher education systems worldwide. (Grand View Research, 2025)</div>
+        <div class="tam-card-bar"><div class="tam-card-bar-fill t1-fill"></div></div>
+      </div>
+      <div class="tam-card t2">
+        <div class="tam-card-top">
+          <div class="tam-ring"><svg viewBox="0 0 56 56"><circle class="tam-ring-track" cx="28" cy="28" r="25"/><circle class="tam-ring-fill" cx="28" cy="28" r="25"/></svg></div>
+          <div class="tam-card-growth">
+            <span class="tam-card-growth-val">8%</span>
+            <span class="tam-card-growth-label">of TAM</span>
+          </div>
+        </div>
+        <div class="tam-type">Serviceable Addressable Market</div>
+        <div class="tam-val"><span class="sym">$</span>28<span class="sym">B</span></div>
+        <div class="tam-desc">The $28B Online Program Management and digital campus infrastructure segment, supporting universities that lack internal capacity to scale online education. (Credence Research, 2024; Grand View Research)</div>
+        <div class="tam-card-bar"><div class="tam-card-bar-fill t2-fill"></div></div>
+      </div>
+      <div class="tam-card t3">
+        <div class="tam-card-top">
+          <div class="tam-ring"><svg viewBox="0 0 56 56"><circle class="tam-ring-track" cx="28" cy="28" r="25"/><circle class="tam-ring-fill" cx="28" cy="28" r="25"/></svg></div>
+          <div class="tam-card-growth">
+            <span class="tam-card-growth-val">2030</span>
+            <span class="tam-card-growth-label">Projection</span>
+          </div>
+        </div>
+        <div class="tam-type">Enrollment Surge</div>
+        <div class="tam-val">377<span class="sym">M</span></div>
+        <div class="tam-desc">Global higher education enrollment projected to reach 377 million students by 2030, creating unprecedented demand for scalable digital learning infrastructure. (UNESCO Institute for Statistics)</div>
+        <div class="tam-card-bar"><div class="tam-card-bar-fill t3-fill"></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================================================================
+     SECTION 2B, OUR SOLUTION
+     ================================================================ -->
+<section class="astria-solution">
+  <div class="astria-solution-inner">
+    <div class="solution-heading">
+      <div class="section-label light">Our Solution</div>
+      <div class="solution-watermark">Astria eCampus</div>
+    </div>
+
+    <div class="solution-grid">
+      <div class="solution-card">
+        <div class="solution-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <div class="solution-card-title">Learning Management</div>
+        <div class="solution-card-sub">Course delivery & content</div>
+      </div>
+      <div class="solution-card">
+        <div class="solution-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="solution-card-title">Student Information</div>
+        <div class="solution-card-sub">Records & enrollment</div>
+      </div>
+      <div class="solution-card">
+        <div class="solution-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        </div>
+        <div class="solution-card-title">Digital Library</div>
+        <div class="solution-card-sub">Resources & materials</div>
+      </div>
+    </div>
+
+    <div class="solution-connector">
+      <div class="solution-connector-line"></div>
+      <div class="solution-connector-dot"></div>
+    </div>
+
+    <div class="solution-grid">
+      <div class="solution-card">
+        <div class="solution-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+        </div>
+        <div class="solution-card-title">Admissions & Recruitment</div>
+        <div class="solution-card-sub">Application workflow</div>
+      </div>
+      <div class="solution-card">
+        <div class="solution-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <div class="solution-card-title">Analytics & Insights</div>
+        <div class="solution-card-sub">Performance metrics</div>
+      </div>
+      <div class="solution-card">
+        <div class="solution-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <div class="solution-card-title">Communication Hub</div>
+        <div class="solution-card-sub">Notifications & messaging</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     ================================================================ -->
+<section class="astria-moat">
+  <div class="astria-moat-mesh"></div>
+  <div class="astria-moat-inner">
+    <div class="moat-top">
+      <div>
+        <div class="section-label light">Why Astria</div>
+        <h2 class="section-h2 white">A Defensible Model<br>Built for <span class="hl">Long-Term Value</span></h2>
+      </div>
+      <div>
+        <p class="moat-desc">Our integrated eCampus model creates deep operational partnerships with universities, generating recurring revenue streams, high switching costs, and scalable economics across every new institution.</p>
+      </div>
+    </div>
+
+    <div class="moat-grid">
+      <div class="moat-card">
+        <div class="moat-card-head">
+          <div class="moat-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+          <div class="moat-card-title">Deep Infrastructure Integration</div>
+        </div>
+        <div class="moat-card-text">We don't sell software, we become the operational backbone of each university's digital campus. LMS, SIS, CRM, admissions, and student support are all built into one system managed by Astria.</div>
+        <div class="moat-card-stat"><span class="moat-card-stat-val">5+ yr</span><span class="moat-card-stat-label">average partnership duration</span></div>
+      </div>
+      <div class="moat-card">
+        <div class="moat-card-head">
+          <div class="moat-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+          <div class="moat-card-title">Aligned Revenue Model</div>
+        </div>
+        <div class="moat-card-text">Revenue scales directly with institutional success. Our shared-revenue model means we only grow when our partners grow, creating long-term alignment.</div>
+        <div class="moat-card-stat"><span class="moat-card-stat-val">3×</span><span class="moat-card-stat-label">avg. enrollment growth per partner</span></div>
+      </div>
+      <div class="moat-card">
+        <div class="moat-card-head">
+          <div class="moat-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <div class="moat-card-title">Multi-Region Scalability</div>
+        </div>
+        <div class="moat-card-text">Our platform is built to deploy across diverse regulatory, linguistic, and cultural environments. Each new market expands the playbook, increasing operating leverage.</div>
+        <div class="moat-card-stat"><span class="moat-card-stat-val">20+</span><span class="moat-card-stat-label">countries with active students</span></div>
+      </div>
+      <div class="moat-card">
+        <div class="moat-card-head">
+          <div class="moat-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="moat-card-title">Full-Stack Ownership</div>
+        </div>
+        <div class="moat-card-text">Most competitors offer marketing OR technology. Astria delivers both, plus academic delivery support. This full-stack approach makes us the single point of accountability.</div>
+        <div class="moat-card-stat"><span class="moat-card-stat-val">360°</span><span class="moat-card-stat-label">managed eCampus model</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     PARTNER SECTION
+     ================================================================ -->
+<section class="astria-partner">
+  <div class="astria-partner-inner">
+    <h2 class="partner-h2">Partner With Us to Scale the Future of <span class="hl">Higher Education</span></h2>
+    <p class="partner-sub">Astria Learning is entering its next phase of strategic expansion. We are seeking aligned investment partners who understand the scale of transformation underway in global higher education.</p>
+    <div class="partner-tag">Shared Growth Outcomes</div>
+
+    <div class="partner-grid">
+      <div class="partner-card">
+        <div class="partner-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div>
+          <div class="partner-card-num">01</div>
+          <div class="partner-card-title">Strategic Growth Capital</div>
+          <div class="partner-card-desc">Accelerating institutional expansion globally through targeted investment in high-growth emerging markets.</div>
+        </div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+        </div>
+        <div>
+          <div class="partner-card-num">02</div>
+          <div class="partner-card-title">Operational & Strategic Expertise</div>
+          <div class="partner-card-desc">Guiding disciplined global scale with proven frameworks for multi-market education delivery.</div>
+        </div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <div>
+          <div class="partner-card-num">03</div>
+          <div class="partner-card-title">Global Network Access</div>
+          <div class="partner-card-desc">Expanding international market reach through established institutional relationships across three continents.</div>
+        </div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <div>
+          <div class="partner-card-num">04</div>
+          <div class="partner-card-title">Long-Term Alignment</div>
+          <div class="partner-card-desc">Building sustainable institutional value through shared-revenue models that grow with every partner university.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     SECTION 5, FINAL CTA
+     ================================================================ -->
+<section class="astria-cta-final">
+  <div class="astria-cta-final-inner">
+    <div class="cta-card">
+      <div class="cta-grid"></div>
+      <div class="cta-content">
+        <div class="cta-badge">Investment Inquiry</div>
+        <h2 class="cta-h2">Let's Build the Future of<br>Higher Education <span class="hl">Together</span></h2>
+        <p class="cta-sub">We're seeking strategic partners who understand the scale of transformation underway in global higher education. If you're aligned with our vision, let's talk.</p>
+        <div class="cta-buttons">
+          <a href="https://calendly.com/astrialearning/explore-investing-opportunities" class="cta-btn-primary">
+            Schedule a Discussion
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="https://astrialearning.com/contact-us/" class="cta-btn-secondary">Investor Relations</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
