@@ -91,17 +91,17 @@
 
     .astria-inv2-badge {
       display: inline-flex; align-items: center; gap: 10px;
-      padding: 8px 18px; border: 1px solid rgba(81,166,241,0.3);
+      padding: 8px 18px; border: 1px solid rgba(186,140,255,0.45);
       border-radius: 100px; font-size: 13px; font-weight: 700;
-      letter-spacing: 2.5px; text-transform: uppercase; color: #51A6F1;
-      margin-bottom: 32px; background: rgba(81,166,241,0.06); backdrop-filter: blur(6px);
+      letter-spacing: 2.5px; text-transform: uppercase; color: #FFFFFF;
+      margin-bottom: 32px; background: rgba(116,53,202,0.2); backdrop-filter: blur(6px);
     }
     .astria-inv2-badge-dot {
-      width: 7px; height: 7px; background: #51A6F1; border-radius: 50%; position: relative;
+      width: 7px; height: 7px; background: #C69BFF; border-radius: 50%; position: relative;
     }
     .astria-inv2-badge-dot::after {
       content: ''; position: absolute; inset: -3px;
-      border: 1px solid rgba(81,166,241,0.4); border-radius: 50%;
+      border: 1px solid rgba(198,155,255,0.45); border-radius: 50%;
       animation: astriaPing 2s ease-out infinite;
     }
     @keyframes astriaPing {
@@ -120,7 +120,7 @@
     }
 
     .astria-inv2-sub {
-      font-size: 23px; line-height: 1.65; color: rgba(217,233,249,0.65);
+      font-size: 23px; line-height: 1.65; color: #FFFFFF;
       max-width: 560px; margin-bottom: 40px; font-weight: 400;
     }
 
@@ -166,8 +166,8 @@
     }
     .astria-inv2-infographic {
       position: relative; width: 100%; max-width: 520px; border-radius: 20px;
-      overflow: hidden; border: 1px solid rgba(81,166,241,0.15);
-      background: rgba(10,65,99,0.5); backdrop-filter: blur(20px);
+      overflow: hidden; border: 1px solid rgba(172,128,255,0.3);
+      background: linear-gradient(160deg, rgba(48,54,67,0.86) 0%, rgba(66,56,103,0.8) 55%, rgba(51,89,69,0.78) 100%); backdrop-filter: blur(20px);
     }
     .astria-inv2-bg-img {
       position: absolute; bottom: -20px; right: -20px; width: 320px; opacity: 0.1;
@@ -330,11 +330,11 @@
 
     .section-label {
       display: inline-flex; align-items: center; gap: 10px;
-      font-size: 13px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+      font-size: 15px; font-weight: 700; letter-spacing: 3.2px; text-transform: uppercase;
       color: #006C97; margin-bottom: 20px;
     }
     .section-label::before {
-      content: ''; width: 24px; height: 2px; background: #51A6F1; border-radius: 2px;
+      content: ''; width: 30px; height: 2px; background: #51A6F1; border-radius: 2px;
     }
     .section-label.light { color: #51A6F1; }
 
@@ -485,7 +485,7 @@
       align-items: start; margin-bottom: 72px;
     }
     .moat-desc {
-      font-size: 22px; line-height: 1.7; color: rgba(217,233,249,0.5); padding-top: 52px;
+      font-size: 24px; line-height: 1.75; color: #FFFFFF; padding-top: 52px;
     }
 
     /* Moat cards */
@@ -516,15 +516,15 @@
       width: 24px; height: 24px; stroke: #51A6F1; fill: none;
       stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
     }
-    .moat-card-title { font-size: 22px; font-weight: 700; color: #FFFFFF; }
-    .moat-card-text { font-size: 18px; line-height: 1.7; color: rgba(217,233,249,0.45); }
+    .moat-card-title { font-size: 24px; font-weight: 700; color: #FFFFFF; }
+    .moat-card-text { font-size: 20px; line-height: 1.75; color: #FFFFFF; }
     .moat-card-stat {
       display: inline-flex; align-items: baseline; gap: 6px; margin-top: 16px;
       padding: 8px 14px; background: rgba(81,166,241,0.06); border-radius: 8px;
       border: 1px solid rgba(81,166,241,0.1);
     }
     .moat-card-stat-val { font-size: 24px; font-weight: 700; color: #51A6F1; }
-    .moat-card-stat-label { font-size: 15px; color: rgba(217,233,249,0.4); font-weight: 500; }
+    .moat-card-stat-label { font-size: 16px; color: rgba(217,233,249,0.5); font-weight: 500; }
 
     /* Comparison table */
     .moat-compare {
@@ -605,9 +605,9 @@
       border: 2px solid rgba(81,166,241,0.3); opacity: 0; transition: all 0.4s ease;
     }
     .model-step:hover .model-step-num::after { opacity: 1; inset: -10px; }
-    .model-step-title { font-size: 20px; font-weight: 700; color: #0C3352; margin-bottom: 10px; }
+    .model-step-title { font-size: 22px; font-weight: 700; color: #0C3352; margin-bottom: 12px; }
     .model-step-text {
-      font-size: 17px; line-height: 1.6; color: rgba(12,51,82,0.45); max-width: 280px; margin: 0 auto;
+      font-size: 19px; line-height: 1.7; color: rgba(12,51,82,0.5); max-width: 300px; margin: 0 auto;
     }
 
     /* Revenue model callout */
@@ -628,7 +628,7 @@
     .model-rev-node.astria-node { background: linear-gradient(135deg, #006C97, #0A4163); color: #FFFFFF; box-shadow: 0 6px 24px rgba(0,108,151,0.2); }
     .model-rev-node.revenue { background: rgba(81,166,241,0.08); color: #006C97; border: 1px solid rgba(81,166,241,0.2); }
     .model-rev-arrow { color: rgba(10,65,99,0.2); font-size: 24px; }
-    .model-rev-node-sub { display: block; font-size: 12px; font-weight: 500; opacity: 0.65; margin-top: 4px; letter-spacing: 0.5px; }
+    .model-rev-node-sub { display: block; font-size: 14px; font-weight: 500; opacity: 0.72; margin-top: 6px; letter-spacing: 0.5px; }
 
     /* ================================================================
        SECTION 6, FINAL CTA
@@ -664,8 +664,8 @@
     .cta-content { position: relative; z-index: 1; }
     .cta-badge {
       display: inline-flex; align-items: center; gap: 8px;
-      padding: 8px 18px; border: 1px solid rgba(81,166,241,0.3);
-      border-radius: 100px; font-size: 13px; font-weight: 700;
+      padding: 10px 20px; border: 1px solid rgba(81,166,241,0.3);
+      border-radius: 100px; font-size: 15px; font-weight: 700;
       letter-spacing: 2.5px; text-transform: uppercase; color: #51A6F1;
       background: rgba(81,166,241,0.06); margin-bottom: 32px;
     }
@@ -675,7 +675,7 @@
     }
     .cta-h2 .hl { color: #51A6F1; }
     .cta-sub {
-      font-size: 23px; line-height: 1.65; color: rgba(217,233,249,0.5);
+      font-size: 25px; line-height: 1.72; color: #FFFFFF;
       max-width: 700px; margin: 0 auto 44px;
     }
     .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 48px; }
@@ -735,9 +735,11 @@
       margin: 0 auto; padding: 100px 60px; text-align: center;
     }
     .solution-heading { margin-bottom: 64px; }
+
+    .astria-solution .section-label.light { color: #C69BFF; }
     .solution-watermark {
       font-size: clamp(48px, 8vw, 110px); font-weight: 700;
-      color: rgba(81,166,241,0.06); line-height: 1; margin-bottom: -20px;
+      color: rgba(194,162,255,0.28); line-height: 1; margin-bottom: -20px;
       letter-spacing: -3px; pointer-events: none; user-select: none;
     }
     .solution-grid {
@@ -752,11 +754,11 @@
     }
     .solution-card {
       padding: 36px 28px; border-radius: 16px; text-align: center;
-      border: 1px solid rgba(81,166,241,0.1); background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(148,235,172,0.22); background: linear-gradient(160deg, rgba(72,52,112,0.42), rgba(39,92,58,0.38));
       backdrop-filter: blur(8px); transition: all 0.4s ease; position: relative;
     }
     .solution-card:hover {
-      background: rgba(255,255,255,0.06); border-color: rgba(81,166,241,0.25);
+      background: linear-gradient(160deg, rgba(98,69,155,0.55), rgba(45,124,76,0.5)); border-color: rgba(193,160,255,0.45);
       transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,0.15);
     }
     .solution-card-icon {
@@ -772,7 +774,7 @@
       font-size: 19px; font-weight: 700; color: #FFFFFF; margin-bottom: 6px;
     }
     .solution-card-sub {
-      font-size: 15px; color: rgba(217,233,249,0.4); font-weight: 400;
+      font-size: 15px; color: #FFFFFF; font-weight: 400;
     }
     .solution-connector {
       display: flex; align-items: center; justify-content: center;
@@ -812,38 +814,58 @@
     }
     .partner-h2 .hl { color: #51A6F1; }
     .partner-sub {
-      font-size: 20px; line-height: 1.7; color: rgba(217,233,249,0.5);
+      font-size: 22px; line-height: 1.75; color: #FFFFFF;
       max-width: 800px; margin: 0 auto 28px;
     }
     .partner-tag {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 8px 20px; border: 1px solid rgba(81,166,241,0.25);
-      border-radius: 100px; font-size: 13px; font-weight: 700;
-      letter-spacing: 1.5px; color: #51A6F1; background: rgba(81,166,241,0.06);
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 10px 24px; border: 1px solid rgba(186,140,255,0.45);
+      border-radius: 100px; font-size: 15px; font-weight: 700;
+      letter-spacing: 1.8px; color: #DCC6FF; background: rgba(116,53,202,0.22);
       margin-bottom: 56px;
     }
     .partner-tag::before {
       content: '✦'; color: #51A6F1; font-size: 11px;
     }
     .partner-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
-      max-width: 960px; margin: 0 auto; text-align: left;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 22px;
+      max-width: 980px; margin: 0 auto; text-align: left;
+      position: relative;
+    }
+    .partner-grid::before {
+      content: ''; position: absolute; left: 50%; top: 8%; bottom: 8%; width: 1px;
+      background: linear-gradient(180deg, transparent, rgba(186,140,255,0.35), transparent);
+      transform: translateX(-50%); pointer-events: none;
+    }
+    .partner-grid::after {
+      content: ''; position: absolute; top: 50%; left: 8%; right: 8%; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(186,140,255,0.35), transparent);
+      transform: translateY(-50%); pointer-events: none;
     }
     .partner-card {
-      padding: 36px 32px; border-radius: 16px;
-      border: 1px solid rgba(81,166,241,0.1);
-      background: rgba(255,255,255,0.03); backdrop-filter: blur(8px);
+      padding: 38px 34px; border-radius: 18px;
+      border: 1px solid rgba(198,155,255,0.35);
+      background: linear-gradient(155deg, rgba(72,52,112,0.45), rgba(45,101,72,0.3)); backdrop-filter: blur(10px);
       display: flex; align-items: flex-start; gap: 20px;
       transition: all 0.4s ease; position: relative; overflow: hidden;
     }
     .partner-card::before {
       content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
-      background: linear-gradient(90deg, #51A6F1, transparent); opacity: 0;
+      background: linear-gradient(90deg, #C69BFF, rgba(107,237,180,0.8)); opacity: 0.75;
       transition: opacity 0.4s ease;
     }
+    .partner-card::after {
+      content: ''; position: absolute; inset: 0; pointer-events: none;
+      background:
+        linear-gradient(135deg, rgba(198,155,255,0.45) 0 2px, transparent 2px) top left/22px 22px no-repeat,
+        linear-gradient(225deg, rgba(198,155,255,0.45) 0 2px, transparent 2px) top right/22px 22px no-repeat,
+        linear-gradient(315deg, rgba(198,155,255,0.45) 0 2px, transparent 2px) bottom right/22px 22px no-repeat,
+        linear-gradient(45deg, rgba(198,155,255,0.45) 0 2px, transparent 2px) bottom left/22px 22px no-repeat;
+      opacity: 0.9;
+    }
     .partner-card:hover {
-      background: rgba(255,255,255,0.06); border-color: rgba(81,166,241,0.25);
-      transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,0.15);
+      background: linear-gradient(160deg, rgba(114,76,184,0.62), rgba(56,138,91,0.5)); border-color: rgba(214,181,255,0.65);
+      transform: translateY(-5px); box-shadow: 0 18px 52px rgba(72,39,123,0.28);
     }
     .partner-card:hover::before { opacity: 1; }
     .partner-card-icon {
@@ -856,14 +878,14 @@
       stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
     }
     .partner-card-num {
-      font-size: 11px; font-weight: 700; letter-spacing: 2px; color: rgba(81,166,241,0.4);
+      font-size: 13px; font-weight: 700; letter-spacing: 2.4px; color: rgba(214,181,255,0.88);
       margin-bottom: 8px;
     }
     .partner-card-title {
-      font-size: 20px; font-weight: 700; color: #FFFFFF; margin-bottom: 6px; line-height: 1.25;
+      font-size: 23px; font-weight: 700; color: #FFFFFF; margin-bottom: 8px; line-height: 1.3;
     }
     .partner-card-desc {
-      font-size: 16px; line-height: 1.6; color: rgba(217,233,249,0.4);
+      font-size: 18px; line-height: 1.7; color: #FFFFFF;
     }
 
     /* ================================================================
@@ -886,6 +908,7 @@
       .astria-opp-inner, .astria-moat-inner, .astria-cta-final-inner,
       .astria-solution-inner, .astria-partner-inner { padding: 72px 28px; }
       .partner-grid { grid-template-columns: 1fr; }
+      .partner-grid::before, .partner-grid::after { display: none; }
       .partner-row { padding: 24px 24px; }
     }
 
@@ -930,10 +953,10 @@
     <div class="astria-inv2-copy">
       <div class="astria-inv2-badge">
         <span class="astria-inv2-badge-dot"></span>
-        The Infrastructure of Intelligence
+        Investment Opportunity
       </div>
       <h1 class="astria-inv2-h1">
-        Investing in the <span class="highlight">Global</span> Education Revolution
+        Invest in the Global Education Revolution 
       </h1>
       <p class="astria-inv2-sub">
         Astria Learning provides the digital infrastructure universities need to scale, improve efficiency, and expand access globally. We invite investors to partner with us to drive long-term growth and institutional transformation.
